@@ -1,0 +1,19 @@
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = "com.test.Main"
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.projectlombok', name: 'lombok-maven', version: '1.16.20.0', ext: 'pom'
+    compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.13'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
